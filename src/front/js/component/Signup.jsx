@@ -61,7 +61,7 @@ export const Signup = () => {
                 <div className="col-md-6">
                     <div className="card">
                         <div className="card-body">
-                            <h2 className="card-title text-center mb-3 display-5">Create account</h2>
+                            <h2 className="card-title text-center text-danger mb-3 display-5">*Create account*</h2>
                             {errorMessage && <div className="alert alert-danger" role="alert">{errorMessage}</div>}
                             <form onSubmit={handleSubmit}>
                                 <div className="form-group mt-3 h6">
@@ -85,7 +85,7 @@ export const Signup = () => {
                                         value={lastName} onChange={handleLastNameChange} required />
                                 </div>
                                 <div className="text-center">
-                                    <button type="submit" className="btn btn-primary mt-5">Create account</button>
+                                    <button type="submit" className="btn btn-dark mt-5">Create account</button>
                                 </div>
                             </form>
                         </div>

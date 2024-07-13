@@ -26,11 +26,11 @@ export const Navbar = () => {
 					{store.isLogin ?
 						<>
 							<div class="dropdown">
-								<button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+								<button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
 									Welcome {store.user.first_name}
 								</button>
 								<ul class="dropdown-menu">
-									<li><Link to="/profile"><span onClick={profile} className="text-secondary">Profile</span></Link></li>
+									<li><Link to="/profile"><span onClick={profile} className="text-primary">Profile</span></Link></li>
 									<li><Link to="/"><span onClick={logout} className="text-danger">Logout</span></Link></li>
 								</ul>
 							</div>
@@ -38,7 +38,7 @@ export const Navbar = () => {
 						</>
 						:
 						<>
-							<Link to="/login"><button className="btn btn-primary ms-2">Login</button></Link>
+							<Link to="/login"><button className="btn btn-dark ms-2">Login</button></Link>
 							
 						</>
 					}

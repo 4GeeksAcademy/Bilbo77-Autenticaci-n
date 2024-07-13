@@ -44,8 +44,8 @@ export const Login = () => {
         <div className="col-md-6">
           <div className="card">
             <div className="card-body">
-              <h2 className="card-title text-center mb-3 display-5">
-                Login
+              <h2 className="card-title text-center text-danger mb-3 display-5">
+                *Login*
               </h2>
               <form onSubmit={handleSubmit}>
                 <div className="form-group mt-3 h6">
@@ -75,7 +75,7 @@ export const Login = () => {
                   />
                 </div>
                 <div className="text-center">
-                  <button type="submit" className="btn btn-success mt-5">
+                  <button type="submit" className="btn btn-dark mt-5">
                     Sign in
                   </button>
                   <Link to="/signup"> <p className="text-center mt-2"> You don´t have an account? Create one here</p></Link>

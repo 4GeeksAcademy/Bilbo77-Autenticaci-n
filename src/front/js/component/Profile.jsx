@@ -17,7 +17,7 @@ export const Profile = () => {
         :
         <div className="text-center">
         <p>Session expired</p>
-          <Link to="/login"><button className="btn btn-success ms-2">Login</button></Link>
+          <Link to="/login"><button className="btn btn-dark ms-2">Login</button></Link>
         </div>
       }
     </div>
